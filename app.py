@@ -1,7 +1,5 @@
-import pyodbc, sys, logging, configparser
+import pyodbc, logging, configparser
 import smtplib, ssl
-import threading
-import pandas as pd
 import os, schedule, time
 from datetime import datetime, timedelta
 from openpyxl import Workbook
