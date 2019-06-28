@@ -1,0 +1,17 @@
+26-Jun-19 16:08:39 - Job Started
+26-Jun-19 16:08:39 - Creating Excel...
+26-Jun-19 16:08:58 - Sending Email...
+26-Jun-19 16:09:07 - (535, b'5.7.3 Authentication unsuccessful [BN7PR10CA0028.namprd10.prod.outlook.com]')
+Traceback (most recent call last):
+  File "D:/Users/User/PycharmProjects/Scheduler/venv/FailedOrder.py", line 88, in sendEmail
+    server.login(sender_email, password)
+  File "D:\Users\User\AppData\Local\Programs\Python\Python37-32\lib\smtplib.py", line 730, in login
+    raise last_exception
+  File "D:\Users\User\AppData\Local\Programs\Python\Python37-32\lib\smtplib.py", line 721, in login
+    initial_response_ok=initial_response_ok)
+  File "D:\Users\User\AppData\Local\Programs\Python\Python37-32\lib\smtplib.py", line 642, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.3 Authentication unsuccessful [BN7PR10CA0028.namprd10.prod.outlook.com]')
+26-Jun-19 16:09:07 - Job Completed
+26-Jun-19 16:10:07 - Job Started
+26-Jun-19 16:10:07 - Creating Excel...

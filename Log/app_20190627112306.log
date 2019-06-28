@@ -1,0 +1,19 @@
+27-Jun-19 11:23:06 - Job Started
+27-Jun-19 11:23:06 - Creating Excel...
+27-Jun-19 11:23:17 - ('28000', '[28000] [Microsoft][ODBC SQL Server Driver][SQL Server]Login failed. The login is from an untrusted domain and cannot be used with Windows authentication. (18452) (SQLDriverConnect); [28000] [Microsoft][ODBC SQL Server Driver][SQL Server]Login failed. The login is from an untrusted domain and cannot be used with Windows authentication. (18452)')
+Traceback (most recent call last):
+  File "D:/Users/User/PycharmProjects/Scheduler/venv/FailedOrder.py", line 198, in <module>
+    schedule.run_pending()
+  File "D:\Users\User\PycharmProjects\Scheduler\venv\lib\site-packages\schedule\__init__.py", line 563, in run_pending
+    default_scheduler.run_pending()
+  File "D:\Users\User\PycharmProjects\Scheduler\venv\lib\site-packages\schedule\__init__.py", line 94, in run_pending
+    self._run_job(job)
+  File "D:\Users\User\PycharmProjects\Scheduler\venv\lib\site-packages\schedule\__init__.py", line 147, in _run_job
+    ret = job.run()
+  File "D:\Users\User\PycharmProjects\Scheduler\venv\lib\site-packages\schedule\__init__.py", line 466, in run
+    ret = self.job_func()
+  File "D:/Users/User/PycharmProjects/Scheduler/venv/FailedOrder.py", line 22, in main
+    createExcel()
+  File "D:/Users/User/PycharmProjects/Scheduler/venv/FailedOrder.py", line 104, in createExcel
+    'Server=' + config['SERVER']['Sql_Server'] + ';'
+pyodbc.InterfaceError: ('28000', '[28000] [Microsoft][ODBC SQL Server Driver][SQL Server]Login failed. The login is from an untrusted domain and cannot be used with Windows authentication. (18452) (SQLDriverConnect); [28000] [Microsoft][ODBC SQL Server Driver][SQL Server]Login failed. The login is from an untrusted domain and cannot be used with Windows authentication. (18452)')

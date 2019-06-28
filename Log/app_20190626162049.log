@@ -1,0 +1,35 @@
+26-Jun-19 16:20:49 - Job Started
+26-Jun-19 16:20:49 - Creating Excel...
+26-Jun-19 16:21:09 - Sending Email...
+26-Jun-19 16:21:09 - [Errno 11001] getaddrinfo failed
+Traceback (most recent call last):
+  File "D:/Users/User/PycharmProjects/Scheduler/venv/FailedOrder.py", line 83, in sendEmail
+    server = smtplib.SMTP(smtp_server, port)
+  File "D:\Users\User\AppData\Local\Programs\Python\Python37-32\lib\smtplib.py", line 251, in __init__
+    (code, msg) = self.connect(host, port)
+  File "D:\Users\User\AppData\Local\Programs\Python\Python37-32\lib\smtplib.py", line 336, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "D:\Users\User\AppData\Local\Programs\Python\Python37-32\lib\smtplib.py", line 307, in _get_socket
+    self.source_address)
+  File "D:\Users\User\AppData\Local\Programs\Python\Python37-32\lib\socket.py", line 707, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "D:\Users\User\AppData\Local\Programs\Python\Python37-32\lib\socket.py", line 748, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+26-Jun-19 16:21:09 - local variable 'server' referenced before assignment
+Traceback (most recent call last):
+  File "D:/Users/User/PycharmProjects/Scheduler/venv/FailedOrder.py", line 194, in <module>
+    schedule.run_pending()
+  File "D:\Users\User\PycharmProjects\Scheduler\venv\lib\site-packages\schedule\__init__.py", line 563, in run_pending
+    default_scheduler.run_pending()
+  File "D:\Users\User\PycharmProjects\Scheduler\venv\lib\site-packages\schedule\__init__.py", line 94, in run_pending
+    self._run_job(job)
+  File "D:\Users\User\PycharmProjects\Scheduler\venv\lib\site-packages\schedule\__init__.py", line 147, in _run_job
+    ret = job.run()
+  File "D:\Users\User\PycharmProjects\Scheduler\venv\lib\site-packages\schedule\__init__.py", line 466, in run
+    ret = self.job_func()
+  File "D:/Users/User/PycharmProjects/Scheduler/venv/FailedOrder.py", line 20, in main
+    sendEmail()
+  File "D:/Users/User/PycharmProjects/Scheduler/venv/FailedOrder.py", line 92, in sendEmail
+    server.quit()
+UnboundLocalError: local variable 'server' referenced before assignment

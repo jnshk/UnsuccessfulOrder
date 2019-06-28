@@ -1,0 +1,19 @@
+26-Jun-19 16:34:04 - Job Started
+26-Jun-19 16:34:04 - Creating Excel...
+26-Jun-19 16:34:04 - name 'config' is not defined
+Traceback (most recent call last):
+  File "D:/Users/User/PycharmProjects/Scheduler/venv/FailedOrder.py", line 195, in <module>
+    schedule.run_pending()
+  File "D:\Users\User\PycharmProjects\Scheduler\venv\lib\site-packages\schedule\__init__.py", line 563, in run_pending
+    default_scheduler.run_pending()
+  File "D:\Users\User\PycharmProjects\Scheduler\venv\lib\site-packages\schedule\__init__.py", line 94, in run_pending
+    self._run_job(job)
+  File "D:\Users\User\PycharmProjects\Scheduler\venv\lib\site-packages\schedule\__init__.py", line 147, in _run_job
+    ret = job.run()
+  File "D:\Users\User\PycharmProjects\Scheduler\venv\lib\site-packages\schedule\__init__.py", line 466, in run
+    ret = self.job_func()
+  File "D:/Users/User/PycharmProjects/Scheduler/venv/FailedOrder.py", line 21, in main
+    createExcel()
+  File "D:/Users/User/PycharmProjects/Scheduler/venv/FailedOrder.py", line 99, in createExcel
+    dDate = datetime.today().date()+ timedelta(int(config['DATA']['TimeDelta']))
+NameError: name 'config' is not defined
